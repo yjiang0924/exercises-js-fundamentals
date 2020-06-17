@@ -13,12 +13,21 @@
  * @returns {boolean} True if every number in the input array is positive
  *   and false otherwise.
  */
-function anyPositive(array) {
-  // This is your job. :)
+function anyPositive(number) {
+  for (let i = 0; i< number.length; i++){
+    if(number[i]<=0){
+      return false;
+
+    }
+
+
+  }
+  return true;
+
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for anyPositive:');
+  console.log(anyPositive([10, 10, 10]));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

@@ -5,11 +5,12 @@
  * @returns {boolean} The temperature in Fahrenheit
  */
 function celsiusToFahrenheit(temp) {
-  // This is your job. :).
+  temp=temp+32;
+  return temp;   //I don't know why return to boolean
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for celsiusToFahrenheit:');
+  console.log(celsiusToFahrenheit(3));
 
   // Your sanity checks go here.
 }

@@ -22,11 +22,14 @@
  * @returns {object[]} The concatenation of the two given arrays
  */
 function concat(leftArray, rightArray) {
-  // This is your job. :)
+  leftArray=[];
+  rightArray=[];
+  return leftArray+rightArray;
+
 }
 
 if (require.main === module) {
-  console.log('Running sanity checks for concat:');
+  console.log([1,2],[3]);
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
